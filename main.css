@@ -1,0 +1,293 @@
+    @import url("Media.css");
+body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+	
+	
+}
+
+html {scroll-behavior: smooth}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body::-webkit-scrollbar {
+    background-color:#fff;
+    width:0px
+}
+
+
+body::-webkit-scrollbar-track {
+    background-color:#fff;
+    margin-top: 15px;
+
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color:#cecece;
+    border:4px solid #fff;
+    padding-top: 50px;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {display:none}
+
+button:focus {
+    outline: none;
+}
+
+.loading-banner {position: fixed; top: 0px; left: 0px; width: 100%;height: 100%;background-color: white;z-index: 75;}
+
+.loading-banner > div > img {width: 350px;margin-top: -110px;position: relative;z-index: -1;margin-left: -10px;filter: contrast(5);}
+
+.loading-banner > div > h3 {font-size: 30px;font-weight: bold; font-family: Arial, Helvetica, sans-serif;width: 100%;}
+
+.loading-banner > div > h1 {font-weight: bold; font-family: Arial, Helvetica, sans-serif;font-size:63px;width: 100%;margin-top: -35px;}
+
+.loading-banner > div {position: absolute;
+top: 50%;
+
+ left: 50%;
+ transform: translate(-50%, -50%);}
+
+/* ---------------------------Navigation-Bar---------------------------*/ header {
+    width: 100%;
+}
+
+
+
+#logo.block {opacity: 0 ;}
+
+#logo {opacity: 1}
+
+.logo > img {width: 50px;}
+
+.logo {position: fixed; left: 40px; top: 10.6px;z-index: 52;}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+   
+    height: 75px;
+z-index: 50;
+background-color: white;
+}
+
+nav > ul {
+   float: right;
+    width: 380px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+nav > ul > li {
+    display: inline-block;
+   margin-left: 5px;
+}
+
+.nav-button {
+  
+    border: none;
+   color: black;
+    transition: 0.3s ease;
+    font-size: 14px;
+    width: 115px;
+    height: 40px;
+    border-width: 2px;
+background-color: transparent;
+	
+    
+}
+
+#header {transition: 0.2s ease;background-color: transparent;}
+
+#header.active {box-shadow: 0 0 10px rgba(0,0,0,0.15); background-color: white; color: black;}
+
+.nav-button:hover{color: white; border: solid; font-size: 16px; cursor: pointer;background-color: black}
+
+.loading-banner {;}
+
+.nav-button:focus {
+    color: white;
+    background-color: black;
+
+}
+
+.button-default {background-color: black; color: white; cursor: pointer;border: solid; border-color: black;width: 140px;height: 40px;  transition: 0.3s ease;font-size: 14px;font-weight: semi-bold;box-shadow: 0 0 10px rgba(0,0,0,0.15);}
+
+.button-default:hover { font-size: 13px; background-color: white; color: black;transform: translateY(-1px);}
+
+.button-default:focus {font-size: 13px; background-color: white; color: black;									}
+
+.menu-button {position: fixed; right: 10px; z-index: 73;top:9px;border: none;width: 53px; height: 53px;background-color: white;display: none;}
+
+.button-default > p {margin-top: 8px;float: left;margin-left: 25px;}
+
+.button-default > i {margin-left: 10px;font-size: 22px;float: left;margin-top: 5px;}
+/*---------------------------Home Screens------------------------------*/
+#swipe {transition: 0.3s ease;}
+
+.none{opacity: 0;}
+
+.swipe-indicator {position: absolute; bottom: 0px; width: 100%;left: 0px;animation: bounce 2s infinite;;}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.swipe-indicator-container > p {font-size: 14px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-bottom: 0px;text-align:center;margin-left: -2px}
+
+.swipe-indicator-container > .material-icons {font-size: 30px;}
+
+.swipe-indicator-container {margin: auto; width: 30px;}
+
+.home-wrapper {height: 100vh;margin: auto; width: 990px;}
+
+.home-header {width: 150px;position: absolute;top: 50px;}
+
+.svg-wrapper {float: right;}
+
+.svg-img {width: 862.88px;}
+
+.button-wrapper {margin: auto; width: 140px;margin-top: -35px;}
+
+.home-header > h3 {font-size: 30px;font-weight: bold; font-family: Arial, Helvetica, sans-serif;margin-left: 3px;}
+
+.home-header > h1 {font-weight: bold; font-family: Arial, Helvetica, sans-serif;font-size:63px;margin-top: -35px; }
+
+.home-sub-wrapper { position: absolute;
+    top: 45%;
+width: 1000px;
+    transform: translateY(-50%);}
+
+/*-----------------------------Section----------------------------*/
+
+section {height: 90vh;}
+
+section > div > h1 {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:63px; font-weight: bold; margin-left: 50px; }
+
+.sect-divider {height:125px; width:100%; background-color: transparent; }
+
+/*-----------------------------Carousel----------------------------*/
+
+.portfolio-wrapper {top: 160%;;position: absolute; width: 100%;transform: translateY(-50%);}
+
+.carousel-item {display:inline-block;padding-bottom: 1.5px;height: 550px;margin-top: 5px;margin-left: 10px;}
+
+.carousel {white-space: nowrap;overflow-x:hidden;scroll-behavior: smooth;overflow-y: hidden;}
+
+.carousel-item > .button-wrapper {margin: auto;margin-top: -65px;margin-bottom: 20px;}
+
+.carousel-item > img {height: 323px;object-fit: cover;transition: 0.4s ease;box-shadow: 2px 4px 8px 1px rgba(0,0,0,0.19);}
+
+.mobile-scale {width: 185px;}
+
+.carousel-item > img:hover {}
+
+.next-btn > a > button {position: absolute; right: 10px; z-index: 10; top: 188px;height: 150px;border: none;background-color: #ffffff;}
+
+.back-btn > a > button {position: absolute; left: 10px; z-index: 10; top: 188px;height: 150px;border: none;background-color: white;}
+
+#begin margin-left: 60px;
+
+.scroll-btn {margin-top: 90px;transition: 0.5s ease;;}
+
+.scroll-btn:hover {cursor: pointer;box-shadow: 2px 4px 8px 1px rgba(0,0,0,0.19);}
+
+
+/*----------------------------Contact-------------------------------*/
+
+.form-container {margin-left: 50px;}
+
+.form-container > form > input {width: 500px;height: 35px;margin-top:10px;border: none; background-color: #ECECEC;padding-left: 20px;transition: 0.4s ease;outline: none;word-wrap: break-word;}
+
+input[type=text] {margin-left: 0px;}
+
+
+.form-container > form > button {margin-top: 10px;}
+
+.form-container > form > input:focus {outline:solid; border:solid; outline-color: black;outline-width: 2;margin-left: -2.5px;margin-top: 7px;}
+
+
+
+
+
+
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #ffffff; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+
+
+
+/* ---------------------------Media-Queries---------------------------*/ @media 
+@media (prefers-color-scheme: dark) {body {background-color:#2d2d2d}}
+
+screen and (max-width:1050px) {
+	.svg-img {width: 580px;}
+	.home-header > h3 {font-size:22px; }
+	.home-header > h1 {font-size: 55px;}
+	.header-text {font-size: 55px;}
+	.home-sub-wrapper {width: 700px;}
+	.home-wrapper {width: 710px;}
+	.button-default {width: 110px;height: 35px;}
+}
+
+@media screen and (max-width:730px) {
+	.svg-wrapper {float: left;}
+	.home-header {margin-top: 0px;}
+	.svg-img {width: 460px;}
+	.home-header > h3 {font-size: 16px;}
+	.home-header > h1 {font-size: 30px;margin-top: -15px;}
+	
+	.home-button {margin-top: 15px;margin-left: -2px; 
+	}
+	.home-wrapper{width: 460px;}
+	.logo > img {}
+	.open {display: block;}
+	nav {position: fixed; left: 0px; height: 100%;top: 0px;width: 100%; display: none;z-index: 50;}
+	nav > ul {float: none; margin: auto; width: 160px;margin-top: 200px;}
+	nav > ul > li {margin-top: 10px;}
+	.nav {height: 100%; z-index: 50;}
+	.logo {left: 0px;;width: 100%; background-color: white;height: 70px;top: 0px;}
+	.logo > img {margin-left: 30px;margin-top: 10px;}
+	
+}
+
+@media screen and (max-width:500px){.svg-img {width:330px;} .home-wrapper {width: 360px; } .home-header {margin-top: -40px; }.svg-wrapper {margin-left: 55px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
