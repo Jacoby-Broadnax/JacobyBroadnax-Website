@@ -1,0 +1,45 @@
+.sect-1 {background-image: url(Assets/BROA\ Background.svg);background-position-y: 50%;;}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.panel-container {background-color: rgba(249, 249, 249, 0.8);width: 800px; height: 400px;position: absolute; right: 80px; top: 80px;}
+
+.panel-text {font-size: 70px;font-family: roboto, sans-serif;position: absolute; width: 100%;}
+
+.panel-text > h3 {text-align: left;margin-left: 50px;font-weight: 500;width: 720px;margin-top: 100px;}
+
+h3 {font-size: 70px;font-family: roboto, sans-serif;}
+
+h5 {font-size: 30px;font-family: roboto, sans-serif;}
+
+.dashlines-1 {float: right;transform:translate(50px, -50px)}
+
+.dashlines-2 {float: left;transform: rotate(180deg);margin-top: 50px;margin-left: -60px;}
+
+.dashlines-3 {transform: rotate(180deg); position: absolute; bottom: -280px;left: 50px;;}
+
+.dashlines-4 {transform: rotate(90deg);position: absolute; top: 58px;left: 540px;;}
+
+.dashlines-5 {transform: rotate(90deg);position: absolute; top: 58px;left: 900px;;} 
+
+.dashlines-6 {transform: rotate(90deg);position: absolute; top: 58px;left: 1300px;;} 
+
+.dashlines-7 {transform: rotate(90deg);position: absolute; top: 58px;left: 1700px;;} 
+
+.sect-text {position: absolute; right: 80px;top: 80px;}
+
+nav {position: fixed; width: 100%; top: 0px; left: 0px;z-index: 100;;;}
+
+.logo-container > img {width: 68px;}
+
+.logo-container {margin-left: 70px;margin-top: 10px;}
+
+.scroll-container {overflow-x: scroll; white-space: nowrap;position: absolute;; top: 300px;width: 100%;}
+
+.scroll-container > div {display: inline-block;margin-left: 50px;}
+
+.scroll-container > div > img { background-color: rgba(249, 249, 249, 0.8);width: 300; height: 175;object-fit: scale-down}
+
+.scroll-container > div > h5 {text-align: center;margin-top: 30px;}
